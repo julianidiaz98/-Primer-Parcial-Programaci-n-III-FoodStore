@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Store - Mi Carrito</title>
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <a href="../home/home.html" class="logo">FoodStore</a>
+        </div>
+        <div class="header-right">
+            <a href="../home/home.html" class="nav-link">Catálogo</a>
+            <a href="../cart/cart.html" class="nav-link cart-link active">
+                Carrito <span id="cart-badge" class="cart-badge">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="cart-container">
+        <h2 id="cart-title">Tu Pedido</h2>
+
+        <div class="cart-layout">
+            <section id="cart-list" class="cart-list">
+
+            </section>
+
+            <section id="cart-summary" class="cart-summary hidden">
+                <h3>Resumen del Pedido</h3>
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="summary-subtotal">$0.00</span>
+                </div>
+                <hr>
+                <div class="summary-row total-row">
+                    <span>Total a Pagar</span>
+                    <span id="cart-total-value">$0.00</span>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script type="module" src="./cart.ts"></script>
+    
+</body>
+</html>>
